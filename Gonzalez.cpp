@@ -22,8 +22,10 @@ int main() {
         vector_resultante[i] = matriz[i][0] + matriz[i][1]; 
     }
 
-    if (n == 2) {
+   char repetir;
 
+do {
+    if (n == 2) {
         if (vector_resultante[1] > 0)
             cout << "El numero sub 1 pertenece al cuadrante de los positivos" << endl;
         else
@@ -34,6 +36,11 @@ int main() {
         else
             cout << "El numero sub 0 pertenece al cuadrante de los negativos" << endl;
     }
+
+    cout << "Desea repetir el analisis? (s/n): ";
+    cin >> repetir;
+
+} while (repetir == 's' || repetir == 'S');
 
     return 0;
 }
