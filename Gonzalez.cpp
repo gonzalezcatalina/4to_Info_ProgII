@@ -3,12 +3,12 @@ using namespace std;
 
 int main() {
 
-    int n;
+    int numero;
 
     do {
         cout << "Ingrese un numero entero mayor o igual a dos: ";
-        cin >> n;
-    } while (n < 2 || n > 15);
+        cin >> numero;
+    } while (numero < 2 || numero > 15);
 
     int matriz[15][2];
     int vector_resultante[15];
