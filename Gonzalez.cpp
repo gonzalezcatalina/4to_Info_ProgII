@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 
     int numero;
-
+// Se valida que numero este entre 2 y 15.
     do {
         cout << "Ingrese un numero entero mayor o igual a dos: ";
         cin >> numero;
@@ -18,12 +18,12 @@ int main() {
             cout << "Ingrese un numero: " << endl;
             cin >> matriz[i][j];
         }
-
+//Se suman los dos valores de cada fila.
         vector_resultante[i] = matriz[i][0] + matriz[i][1]; 
     }
 
    char repetir;
-
+// Se repire el analisis mientras el usuario ingrese s.
 do {
     if (n == 2) {
         if (vector_resultante[1] > 0)
